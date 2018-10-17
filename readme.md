@@ -7,8 +7,11 @@ Lu 可以认为是中文世界的撸, 即撸 Rpc--- 造个 Rpc 轮子.
 
 Lu-Rpc 架构图如下:
 
+![](https://upload-images.jianshu.io/upload_images/4236553-a2bf8ddf71d1a993.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-u-Rpc 的领域模型设计借鉴 Dubbo, 服务域没有明显的界限. 核心域就是 Invoker, 非常合适作为核心领域模型的接口.
+
+
+Lu-Rpc 的领域模型设计借鉴 Dubbo, 服务域没有明显的界限. 核心域就是 Invoker, 非常合适作为核心领域模型的接口.
 
 会话域可以是Request,也可以是 Invocation. 这个问题不大.
 
