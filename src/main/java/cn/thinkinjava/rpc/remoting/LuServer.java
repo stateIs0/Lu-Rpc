@@ -5,7 +5,6 @@ import com.alipay.remoting.rpc.protocol.UserProcessor;
 
 /**
  *
- *
  * @author 莫那·鲁道
  * @date 2018/10/14-下午8:49
  */
@@ -29,6 +28,7 @@ public class LuServer {
             return;
         }
         rpcServer.start();
+        flag = true;
     }
 
     public void stop() {
