@@ -23,7 +23,7 @@ Lu-Rpc 的领域模型设计借鉴 Dubbo, 服务域没有明显的界限. 核心
 
 
 ## 待开发功能
-1. Lu-mesh
+1. Lu-Service-mesh
 2. 负载均衡
 3. 异常处理
 4. 异步调用，feature 调用。oneway 调用
