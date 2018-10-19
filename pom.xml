@@ -4,9 +4,24 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cn.thinkinjava</groupId>
-  <artifactId>Lu-Rpc</artifactId>
+  <artifactId>Lu-Rpc-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <modules>
+    <module>core</module>
+    <module>cluster</module>
+    <module>filter</module>
+    <module>example</module>
+    <module>remoting</module>
+    <module>lu-netty-remoting</module>
+    <module>raft-register</module>
+    <module>serviceMesh</module>
+    <module>proxy</module>
+    <module>serializer</module>
+    <module>common</module>
+    <module>config</module>
+    <module>extension</module>
+  </modules>
+  <packaging>pom</packaging>
 
   <name>Lu-Rpc</name>
   <description>Learning for RPC</description>
