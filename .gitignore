@@ -15,6 +15,7 @@
 *.iws
 *.iml
 *.ipr
+.mvn
 
 ### NetBeans ###
 /nbproject/private/
@@ -27,3 +28,16 @@
 
 *.cmd
 mvnw
+cluster/src/main/resources/
+cluster/src/test/
+common/src/
+config/src/
+example/src/
+extension/src/
+filter/src/
+lu-netty-remoting/src/
+proxy/src/
+raft-register/src/
+remoting/src/
+serializer/src/
+serviceMesh/src/
