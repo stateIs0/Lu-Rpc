@@ -1,14 +1,14 @@
 package thinkinjava.proxy;
 
-import cn.thinkinjava.api.client.LuConsumer;
-import cn.thinkinjava.api.client.LuConsumerConfig;
-import cn.thinkinjava.api.server.LuProvider;
-import cn.thinkinjava.api.server.LuProviderConfig;
-import cn.thinkinjava.rpc.remoting.LuUserProcessor;
-import cn.thinkinjava.rpc.remoting.Url;
+import thinkinjava.api.client.LuConsumer;
+import thinkinjava.api.client.LuConsumerConfig;
+import thinkinjava.api.server.LuProvider;
+import thinkinjava.api.server.LuProviderConfig;
+import thinkinjava.rpc.remoting.LuUserProcessor;
+import thinkinjava.rpc.remoting.Url;
 import thinkinjava.rpc.remoting.testService.Demo;
 import thinkinjava.rpc.remoting.testService.DemoImpl;
-import cn.thinkinjava.vmZK.LocalFileRegister;
+import thinkinjava.vmZK.LocalFileRegister;
 
 /**
  *
@@ -28,8 +28,6 @@ public class InterceptorTest {
 
         LuProvider luProvider = new LuProvider(luProviderConfig);
         luProvider.export();
-
-
 
         LocalFileRegister.create().registerService(Demo.class.getName(), new Url("localhost", 8081));
 

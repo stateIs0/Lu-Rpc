@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.junit.Before;
 import org.junit.Test;
 
-import cn.thinkinjava.rpc.Request;
+import thinkinjava.rpc.Request;
 import thinkinjava.rpc.remoting.testService.Demo;
 import thinkinjava.rpc.remoting.testService.DemoImpl;
 

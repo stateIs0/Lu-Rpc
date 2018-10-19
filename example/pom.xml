@@ -12,5 +12,13 @@
   <artifactId>example</artifactId>
   <description>使用例子</description>
 
+  <dependencies>
+
+    <dependency>
+      <groupId>cn.thinkinjava</groupId>
+      <artifactId>core</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
 
 </project>

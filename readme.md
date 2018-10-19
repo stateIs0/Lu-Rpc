@@ -17,7 +17,7 @@ Lu-Rpc 的领域模型设计借鉴 Dubbo, 服务域没有明显的界限. 核心
 
 ## 快速开始
 
-在 test 目录下: cn.thinkinjava.example
+进入 example 模块
 
 先启动 ServerTest, 再启动 ClientTest. 
 

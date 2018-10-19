@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import cn.thinkinjava.rpc.remoting.Url;
+import thinkinjava.rpc.remoting.Url;
 
 /**
  *
