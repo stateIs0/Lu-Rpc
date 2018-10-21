@@ -8,7 +8,7 @@
 4. [Java-并发编程常识-by-梁飞](http://thinkinjava.cn/2018/04/Java-并发编程常识-by-梁飞/)
 
 关于修改配置：
-1. [配置管理](http://javatar.iteye.com/blog/949527)
+1. [配置设计](http://javatar.iteye.com/blog/949527)
 
 ## Lu-Rpc
 
