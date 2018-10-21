@@ -7,6 +7,9 @@
 3. [框架设计上的十点基本常识](http://thinkinjava.cn/2018/10/框架设计上的十点基本常识/)
 4. [Java-并发编程常识-by-梁飞](http://thinkinjava.cn/2018/04/Java-并发编程常识-by-梁飞/)
 
+关于修改配置：
+1. [配置管理](http://javatar.iteye.com/blog/949527)
+
 ## Lu-Rpc
 
 Lu-Rpc 是个专为学习者准备的 RPC 框架, 初始架构非常简单, 可供初学者扩展和学习.
