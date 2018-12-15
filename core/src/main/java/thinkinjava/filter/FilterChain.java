@@ -31,7 +31,7 @@ public class FilterChain {
         Invoker last = invoker;
 
         for (int i = filters.size() - 1; i >= 0; i--) {
-            last = new FilterWrapper(filters.get(i), invoker);
+            last = new FilterWrapper(filters.get(i), last);
         }
         // 第一个
         return last;

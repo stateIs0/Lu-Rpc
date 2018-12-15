@@ -101,5 +101,9 @@ public class Request implements Serializable {
         this.port = port;
     }
 
+    public String getUnique() {
+        return ip + ":" +  port + "$" + serviceName;
+    }
+
 
 }

@@ -49,7 +49,7 @@ public class LocalFileRegister implements ServiceRegisterDisCover {
                 }
             }
             pw = new PrintWriter((new FileOutputStream(file, true)));
-            pw.append(serviceName).append("=").append(url.getIp()).append(":").append(String.valueOf(url.getPort()));
+            pw.append(serviceName).append("=").append("localhost").append(":").append(String.valueOf("8081"));
             pw.append(lineSeparator);
             pw.flush();
 

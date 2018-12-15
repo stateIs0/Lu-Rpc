@@ -14,7 +14,7 @@ public interface Invoker {
      * @param req 请求: 会话域
      * @return 结果:包装真正结果.
      */
-    Response invoke(Request req);
+    Response invoke(Request req) throws Throwable;
 
     /**
      * 获取该服务的配置

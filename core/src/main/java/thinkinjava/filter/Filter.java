@@ -16,5 +16,5 @@ public interface Filter {
      * @param req
      * @return
      */
-    Response filter(Invoker invoker, Request req);
+    Response filter(Invoker invoker, Request req) throws Throwable;
 }

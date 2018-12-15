@@ -9,17 +9,17 @@
   <modules>
     <module>core</module>
     <module>cluster</module>
-    <module>filter</module>
+    <!--<module>filter</module>-->
     <module>example</module>
-    <module>remoting</module>
-    <module>lu-netty-remoting</module>
-    <module>raft-register</module>
-    <module>serviceMesh</module>
-    <module>proxy</module>
-    <module>serializer</module>
-    <module>common</module>
-    <module>config</module>
-    <module>extension</module>
+    <!--<module>remoting</module>-->
+    <!--<module>lu-netty-remoting</module>-->
+    <!--<module>raft-register</module>-->
+    <!--<module>serviceMesh</module>-->
+    <!--<module>proxy</module>-->
+    <!--<module>serializer</module>-->
+    <!--<module>common</module>-->
+    <!--<module>config</module>-->
+    <!--<module>extension</module>-->
   </modules>
   <packaging>pom</packaging>
 

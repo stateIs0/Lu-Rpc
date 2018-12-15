@@ -24,7 +24,8 @@ public class FilterWrapper implements Invoker {
     }
 
 
-    public Response invoke(Request args) {
+    @Override
+    public Response invoke(Request args) throws Throwable {
         if (next != null) {
             return next.filter(invoker, args);
         } else {

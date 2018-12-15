@@ -11,12 +11,6 @@ import thinkinjava.rpc.Request;
 import thinkinjava.rpc.remoting.testService.Demo;
 import thinkinjava.rpc.remoting.testService.DemoImpl;
 
-/**
- *
- *
- * @author 玄灭
- * @date 2018/10/14-下午9:14
- */
 public class RpcTest {
 
     public static Map<String, Method> methods = new ConcurrentHashMap<String, Method>();

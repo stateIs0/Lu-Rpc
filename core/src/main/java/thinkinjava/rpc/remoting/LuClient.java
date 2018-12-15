@@ -12,7 +12,7 @@ import thinkinjava.rpc.Response;
  */
 public class LuClient {
 
-    final static RpcClient client = new RpcClient();
+    private final static RpcClient client = new RpcClient();
     static {
         client.init();
     }

@@ -3,6 +3,10 @@ package thinkinjava.filter;
 import java.util.ArrayList;
 import java.util.List;
 
+import thinkinjava.breaker.CircuitBreakerFilter;
+import thinkinjava.breaker.CircuitBreakerStatFilter;
+import thinkinjava.flow.limit.LimitFilter;
+
 /**
  * TODO 自动加载过滤器
  *
@@ -23,6 +27,10 @@ public final class LoadFilters {
 
     public List<Filter> getFilters() {
         this.filterList.add(new ExampleFilter());
+        this.filterList.add(new ExampleFilter2());
+        this.filterList.add(CircuitBreakerFilter.getInstance());
+        this.filterList.add(LimitFilter.getInstance());
+        this.filterList.add(CircuitBreakerStatFilter.getInstance());
         return filterList;
     }
 
