@@ -10,7 +10,7 @@ import thinkinjava.core.Invoker;
  * @author 莫那·鲁道
  * @date 2018/10/19-下午10:56
  */
-public interface LoadBlancer {
+public interface LoadBalance {
 
     Invoker select(List<Invoker> invokers);
 

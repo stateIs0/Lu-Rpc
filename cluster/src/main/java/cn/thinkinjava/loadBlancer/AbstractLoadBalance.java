@@ -2,7 +2,7 @@ package cn.thinkinjava.loadBlancer;
 
 import java.util.List;
 
-import cn.thinkinjava.LoadBlancer;
+import cn.thinkinjava.LoadBalance;
 import thinkinjava.core.Invoker;
 
 /**
@@ -11,11 +11,11 @@ import thinkinjava.core.Invoker;
  * @author 莫那·鲁道
  * @date 2018/10/19-下午11:00
  */
-public abstract class AbstractLoadBlancer implements LoadBlancer {
+public abstract class AbstractLoadBalance implements LoadBalance {
 
     protected List<Invoker> invokers;
 
-    public AbstractLoadBlancer(List<Invoker> invokers) {
+    public AbstractLoadBalance(List<Invoker> invokers) {
         this.invokers = invokers;
     }
 
