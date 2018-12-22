@@ -55,4 +55,6 @@ Lu-Rpc 的领域模型设计借鉴 Dubbo, 服务域没有明显的界限. 核心
 
 欢迎提交 PR，issue。
 
+本人微信：
 
+![image](https://user-images.githubusercontent.com/24973360/50372024-5f975d00-0601-11e9-8247-139e145b1123.png)
