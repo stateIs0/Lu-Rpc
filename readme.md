@@ -34,7 +34,7 @@ Lu-Rpc 的领域模型设计借鉴 Dubbo, 服务域没有明显的界限. 核心
 
 
 ## 待开发功能
-0. 自研基于 Raft 协议的注册中心
+0. ~~自研基于 Raft 协议的注册中心~~(已开发结束，地址： https://github.com/stateIs0/lu-raft)
 1. Lu-Service-mesh
 2. 负载均衡
 3. 异常处理
