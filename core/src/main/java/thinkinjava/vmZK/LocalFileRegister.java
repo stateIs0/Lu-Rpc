@@ -43,11 +43,9 @@ public class LocalFileRegister implements ServiceRegisterDisCover {
         PrintWriter pw = null;
         try {
             if (!file.exists()) {
-                File dir = new File(userHome + "/lu");
-                if (dir.mkdirs()) {
-                    file = new File(configHome);
-                }
+                file.mkdirs();
             }
+            file = new File(configHome);
             pw = new PrintWriter((new FileOutputStream(file, true)));
             pw.append(serviceName).append("=").append("localhost").append(":").append(String.valueOf("8081"));
             pw.append(lineSeparator);
