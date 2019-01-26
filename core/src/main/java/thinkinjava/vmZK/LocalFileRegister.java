@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import thinkinjava.exception.UserOperationException;
 import thinkinjava.rpc.remoting.Url;
 import thinkinjava.util.CloseUtil;
 
@@ -80,8 +81,16 @@ public class LocalFileRegister implements ServiceRegisterDisCover {
     }
 
     private void readFileAndCache() {
-        File file = new File(configHome);
+        File file = new File(userHome + "/lu");
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+        file = new File(configHome);
         long length = file.length();
+        if (length <= 0) {
+            throw new UserOperationException(
+                "LocalFileRegister Center config is empty, maybe you should start server first! ");
+        }
         byte[] content = new byte[(int) length];
         FileInputStream is = null;
         try {

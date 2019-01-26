@@ -1,6 +1,10 @@
 package thinkinjava.api.client;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import thinkinjava.core.BaseServiceConfig;
+import thinkinjava.exception.UserOperationException;
 import thinkinjava.rpc.remoting.Url;
 
 /**
@@ -11,8 +15,18 @@ import thinkinjava.rpc.remoting.Url;
  */
 public class LuConsumerConfig extends BaseServiceConfig {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger("LuConsumerConfig");
 
+
+    @Override
     public Url getServiceUrl() {
-        return serviceRegisterDisCover.getServiceUrl(getServiceName());
+        try {
+            return serviceRegisterDisCover.getServiceUrl(getServiceName());
+
+        } catch (UserOperationException e) {
+            LOGGER.error(e.getMessage(), e);
+            System.exit(1);
+        }
+        return null;
     }
 }
