@@ -39,7 +39,7 @@ public class LocalFileRegister implements ServiceRegisterDisCover {
     }
 
     public void registerService(String serviceName, Url url) {
-        File file = new File(configHome);
+        File file = new File(userHome + "/lu");
         PrintWriter pw = null;
         try {
             if (!file.exists()) {
