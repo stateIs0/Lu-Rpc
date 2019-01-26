@@ -25,14 +25,13 @@
 /nbdist/
 /.nb-gradle/
 
-
+*/target
 *.cmd
 mvnw
 cluster/src/main/resources/
 cluster/src/test/
 common/src/
 config/src/
-example/src/
 extension/src/
 filter/src/
 lu-netty-remoting/src/
