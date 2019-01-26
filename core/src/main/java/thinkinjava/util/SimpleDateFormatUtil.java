@@ -12,6 +12,9 @@ import java.util.Date;
  */
 public class SimpleDateFormatUtil {
 
+    /**
+     * 使用 ThreadLocal 包装 SimpleDateFormat,防止并发问题, 相比较每次 new 节约资源, 加快速度.
+     */
     private final static ThreadLocal<SimpleDateFormat> simpleDateFormat1 = new ThreadLocal<SimpleDateFormat>() {
         @Override
         protected SimpleDateFormat initialValue() {
